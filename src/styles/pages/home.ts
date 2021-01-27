@@ -44,7 +44,7 @@ export const WidgetContent = styled.div`
   }
 `
 
-export const Main = styled.main`
+export const Container = styled.div`
   margin: auto;
   padding-top: 40px;
   width: min(350px, 95%);
@@ -53,6 +53,12 @@ export const Main = styled.main`
     padding-top: 55px;
     margin-left: 128px;
   }
+`
+
+export const Footer = styled.footer`
+  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .5);
 `
 
 export const Logo = styled.img`
