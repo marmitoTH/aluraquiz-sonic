@@ -58,6 +58,8 @@ export const Container = styled.div`
 export const Footer = styled.footer`
   display: flex;
   padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
   background-color: rgba(0, 0, 0, .5);
 `
 
