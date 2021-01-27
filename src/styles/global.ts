@@ -7,4 +7,17 @@ export default createGlobalStyle`
     border: none;
     box-sizing: border-box;
   }
+
+  body, input, textarea {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+
+  body {
+    background: #1c1814;
+  }
+
+  button {
+    cursor: pointer;
+  }
 `
