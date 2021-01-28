@@ -1,5 +1,6 @@
 import * as Styled from '../styles/pages/home'
 import * as Widget from '../components/Widget'
+import Button from '../components/Button'
 import Footer from '../components/Footer'
 import logo from '../assets/logo.svg'
 import alura from '../assets/alura.svg'
@@ -19,7 +20,7 @@ const Home = () => {
               <p>Teste os seus conhecimentos sobre o universo Sonic e compare seu resultado com os amigos!</p>
               <Styled.Form>
                 <input placeholder='Diz aí seu nome pra jogar! :)' />
-                <button>JOGAR</button>
+                <Button>JOGAR</Button>
               </Styled.Form>
             </Widget.Content>
           </Widget.default>
