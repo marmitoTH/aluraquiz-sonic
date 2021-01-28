@@ -1,7 +1,7 @@
-import { DOMAttributes } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 import * as Styled from './styles'
 
-const Button: React.FC<DOMAttributes<HTMLButtonElement>> = ({ children, ...rest }) => {
+const Button: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({ children, ...rest }) => {
   return <Styled.Button {...rest}>{children}</Styled.Button>
 }
 
