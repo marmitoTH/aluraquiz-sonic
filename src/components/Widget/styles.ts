@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  border-radius: 4px;
-  border: 2px solid #2869f0;
-  background-color: #1c1814;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  border: 2px solid ${({ theme }) => theme.colors.primaryColor};
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
 
   & + & {
     margin-top: 24px;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   padding: 14px 32px;
-  background-color: #2869f0;
+  background-color: ${({ theme }) => theme.colors.primaryColor};
 `
 
 export const Content = styled.div`

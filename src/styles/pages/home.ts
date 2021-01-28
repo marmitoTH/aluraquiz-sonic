@@ -21,7 +21,7 @@ export const Form = styled.form`
   input {
     width: 100%;
     height: 36px;
-    border-radius: 4px;
+    border-radius: ${({ theme }) => theme.borderRadius};
     padding: 8px 16px;
     background: none;
     color: rgba(255, 255, 255, 0.7);
