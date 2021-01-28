@@ -9,12 +9,12 @@ export default createGlobalStyle`
   }
 
   body, input, textarea {
-    color: #fff;
+    color: ${({ theme }) => theme.colors.contrastTextColor};
     font-family: 'Lato', sans-serif;
   }
 
   body {
-    background: #1c1814;
+    background: ${({ theme }) => theme.colors.backgroundColor};
   }
 
   button {

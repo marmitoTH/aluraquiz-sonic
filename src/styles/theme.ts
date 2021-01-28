@@ -1,8 +1,8 @@
 export default {
-  Images: {
+  images: {
     background: 'https://wallpapercave.com/wp/wp3543695.png'
   },
-  Colors: {
+  colors: {
     primaryColor: '#2869f0',
     secondaryColor: '#e63c2c',
     backgroundColor: '#1c1814',
