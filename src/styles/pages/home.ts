@@ -49,14 +49,7 @@ export const Form = styled.form`
   }
 
   button {
-    width: 100%;
-    height: 36px;
     margin-top: 24px;
-    border-radius: 4px;
-    background: #e63c2c;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
   }
 `
 
