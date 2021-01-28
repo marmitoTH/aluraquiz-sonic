@@ -2,12 +2,13 @@ import * as Styled from '../styles/pages/home'
 import * as Widget from '../components/Widget'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
+import Background from '../components/Background'
 import logo from '../assets/logo.svg'
 
 const Home = () => {
   return (
     <>
-      <Styled.Background />
+      <Background />
       <Styled.Container>
         <main>
           <Styled.Logo src={logo} alt='Logo AluraQuiz' />
