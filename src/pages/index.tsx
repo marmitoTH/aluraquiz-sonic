@@ -1,5 +1,6 @@
 import * as Styled from '../styles/pages/home'
 import * as Widget from '../components/Widget'
+import Footer from '../components/Footer'
 import logo from '../assets/logo.svg'
 import alura from '../assets/alura.svg'
 
@@ -29,10 +30,7 @@ const Home = () => {
             </Widget.Content>
           </Widget.default>
         </main>
-        <Styled.Footer>
-          <img src={alura} alt='Logo Alura' />
-          <p>Orgulhosamente criado durante a <a href='https://www.alura.com.br/' target='__blank'>Imersão React da Alura</a></p>
-        </Styled.Footer>
+        <Footer />
       </Styled.Container>
     </>
   )
