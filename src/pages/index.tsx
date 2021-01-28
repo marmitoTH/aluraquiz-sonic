@@ -3,7 +3,6 @@ import * as Widget from '../components/Widget'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 import logo from '../assets/logo.svg'
-import alura from '../assets/alura.svg'
 
 const Home = () => {
   return (
