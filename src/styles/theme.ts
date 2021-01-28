@@ -1,4 +1,5 @@
 export default {
+  borderRadius: '4px',
   images: {
     background: 'https://wallpapercave.com/wp/wp3543695.png'
   },
