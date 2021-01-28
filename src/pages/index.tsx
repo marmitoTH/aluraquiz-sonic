@@ -1,4 +1,5 @@
 import * as Styled from '../styles/pages/home'
+import * as Widget from '../components/Widget'
 import logo from '../assets/logo.svg'
 import alura from '../assets/alura.svg'
 
@@ -9,24 +10,24 @@ const Home = () => {
       <Styled.Container>
         <main>
           <Styled.Logo src={logo} alt='Logo AluraQuiz' />
-          <Styled.Widget>
-            <Styled.WidgetHeader>
+          <Widget.default>
+            <Widget.Header>
               <Styled.Title>Sonic The Hedgehog</Styled.Title>
-            </Styled.WidgetHeader>
-            <Styled.WidgetContent>
+            </Widget.Header>
+            <Widget.Content>
               <p>Teste os seus conhecimentos sobre o universo Sonic e compare seu resultado com os amigos!</p>
               <Styled.Form>
                 <input placeholder='Diz aí seu nome pra jogar! :)' />
                 <button>JOGAR</button>
               </Styled.Form>
-            </Styled.WidgetContent>
-          </Styled.Widget>
-          <Styled.Widget>
-            <Styled.WidgetContent>
+            </Widget.Content>
+          </Widget.default>
+          <Widget.default>
+            <Widget.Content>
               <Styled.Title>Quizes da galera</Styled.Title>
               <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Alguma coisa fez:</p>
-            </Styled.WidgetContent>
-          </Styled.Widget>
+            </Widget.Content>
+          </Widget.default>
         </main>
         <Styled.Footer>
           <img src={alura} alt='Logo Alura' />
