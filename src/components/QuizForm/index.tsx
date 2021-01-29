@@ -22,7 +22,12 @@ const QuizForm: React.FC<QuizFormProps> = ({
 
   const evaluate = () => {
     setEvaluated(true)
-    onEvaluated(answer === selected)
+
+    setTimeout(() => {
+      setEvaluated(false)
+      setSelected(undefined)
+      onEvaluated(answer === selected)
+    }, 1000);
   }
 
   const getHighlightStatus = (index: number) => {
