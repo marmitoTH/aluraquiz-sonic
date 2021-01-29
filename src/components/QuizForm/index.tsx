@@ -55,6 +55,7 @@ const QuizForm: React.FC<QuizFormProps> = ({
               type='radio'
               name='choiceID'
               disabled={evaluated}
+              checked={selected === index}
               onChange={() => setSelected(index)}
             />
             {alternative}
