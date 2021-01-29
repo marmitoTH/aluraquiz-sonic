@@ -1,0 +1,134 @@
+{
+  "questions": [
+    {
+      "image": "https://img.utdstc.com/screen/13/sonic-the-hedgehog-1.png",
+      "title": "Em qual jogo Sonic fez sua primeira aparição?",
+      "description": "Vamos começar no nível fácil!",
+      "answer": "4",
+      "alternatives": [
+        "Out Run",
+        "Sonic The Hedgehog (Genesis)",
+        "Sonic The Hedgehog (Master System)",
+        "Sega Forever Collection",
+        "Rad Mobile"
+      ]
+    },
+    {
+      "image": "https://blogtectoy.com.br/wp-content/uploads/2019/12/Sonic-2-Capa.jpg",
+      "title": "Qual o nome real do personagem Tails?",
+      "description": "O personagem é conhecido como o melhor amigo do Sonic.",
+      "answer": "2",
+      "alternatives": [
+        "Tails The Fox",
+        "Miles Tails",
+        "Miles Prower",
+        "Miles The Fox",
+        "Sonic Amarelo"
+      ]
+    },
+    {
+      "image": "https://ia801807.us.archive.org/6/items/play-sega-saturn-online/images/sonic-jam-saturn.png",
+      "title": "Qual jogo do Sonic ficou famoso pelo seu cancelamento no Sega Saturn?",
+      "description": "O Sega Saturn ficou sem um título grande da franquia.",
+      "answer": "2",
+      "alternatives": [
+        "Sonic Saturn",
+        "Sonic Jam",
+        "Sonic X-Treme",
+        "Sonic The Hedgehog 4",
+        "Sonic CD"
+      ]
+    },
+    {
+      "image": "https://s2.glbimg.com/bUxbrtedB9H7IYwZ-5em1f_Rr6Y=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2017/7/L/63gfLQQTeSgLu3XQq43g/sonic-adventure-2-xbox-one-360-retrocompatibilidade.jpg",
+      "title": "No jogo Sonic Adventure 2, qual dos personagem fez sua primeira aparição?",
+      "description": "Sonic Adventure 2 introduziu um dos rivais mais famosos do ouriço.",
+      "answer": "4",
+      "alternatives": [
+        "Big The Cat",
+        "Silver The Hedgehog",
+        "Cream The Rabbit",
+        "Blaze The Cat",
+        "Shadow The Hedgehog"
+      ]
+    },
+    {
+      "image": "https://info.sonicretro.org/images/e/e6/DoomsdayLevel.PNG",
+      "title": "Em Sonic 3 & Knuckles, quantos anéis são necessários para se transformar em Hyper Sonic?",
+      "description": "Hyper Sonic é a transformação mais forte do personagem.",
+      "answer": "1",
+      "alternatives": [
+        "10",
+        "50",
+        "100",
+        "150",
+        "200"
+      ]
+    },
+    {
+      "image": "https://thisgengaming.com/wp-content/uploads/2013/05/20110822211101Sonic_Generations_-_Green_Hill_-_Game_Shot_-_13.jpg",
+      "title": "Em qual jogo Sonic utilizou a habilidade Boost pela primeira vez?",
+      "description": "A habilidade era chamada de Super Boost.",
+      "answer": "3",
+      "alternatives": [
+        "Sonic Unleashed",
+        "Sonic Generations",
+        "Sonic The Hedgehog (2006)",
+        "Sonic Rush",
+        "Sonic Adventure"
+      ]
+    },
+    {
+      "image": "https://i.ytimg.com/vi/i_qADaFRy0s/maxresdefault.jpg",
+      "title": "Quantos anos a franquia Sonic comemora em 2021?",
+      "description": "Sim, você está velho!!!",
+      "answer": "4",
+      "alternatives": [
+        "10",
+        "15",
+        "20",
+        "25",
+        "30"
+      ]
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_666114-MLB27704521981_072018-O.jpg",
+      "title": "Qual o primeiro jogo inédito e multiplataforma da série Sonic?",
+      "description": "O Dreamcast foi o último console lançado pela Sega.",
+      "answer": "0",
+      "alternatives": [
+        "Sonic Heroes",
+        "Sonic Adventure DX",
+        "Sonic Adventure 2 Battle",
+        "Shadow The Hedgehog",
+        "Sonic Riders"
+      ]
+    },
+    {
+      "image": "https://images.nintendolife.com/news/2016/06/head_of_sonic_team_explains_why_dr_robotnik_started_going_by_eggman/1280x720.jpg",
+      "title": "Qual jogo popularizou o apelido Eggman?",
+      "description": "O nome real do vilão é Dr. Ivo Robotnik.",
+      "answer": "2",
+      "alternatives": [
+        "Sonic 3 & Knuckles",
+        "Sonic Jam",
+        "Sonic Adventure",
+        "Sonic Unleashed",
+        "Sonic Colors"
+      ]
+    },
+    {
+      "image": "https://images.nintendolife.com/news/2016/06/head_of_sonic_team_explains_why_dr_robotnik_started_going_by_eggman/1280x720.jpg",
+      "title": "Em Sonic The Hedgehog (Mega Drive), o que acontece após coletar todas as esmeraldas?",
+      "description": "Será que você terminou o primeiro jogo?",
+      "answer": "0",
+      "alternatives": [
+        "Elas desaparecem",
+        "Sonic transforma-se em super",
+        "Batalha final com Dr. Robotinik",
+        "Sonic transaforma-se em hyper",
+        "Angel Island volta a flutuar"
+      ]
+    }
+  ]
+}
