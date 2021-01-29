@@ -1,5 +1,6 @@
 import * as Styled from '../styles/pages/home'
 import * as Widget from '../components/Widget'
+import Container from '../components/Container'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 import Background from '../components/Background'
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Background />
-      <Styled.Container>
+      <Container>
         <main>
           <Styled.Logo src={logo} alt='Logo AluraQuiz' />
           <Widget.default>
@@ -32,7 +33,7 @@ const Home = () => {
           </Widget.default>
         </main>
         <Footer />
-      </Styled.Container>
+      </Container>
     </>
   )
 }
