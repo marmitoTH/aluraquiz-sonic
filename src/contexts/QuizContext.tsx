@@ -1,8 +1,8 @@
 import { createContext, Dispatch, SetStateAction, useState } from 'react'
 
 interface GameProps {
-  user: string | undefined
-  points: number | undefined
+  user: string
+  points: number
 
   setUser: Dispatch<SetStateAction<string>>
   setPoints: Dispatch<SetStateAction<number>>
