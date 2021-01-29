@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Styled.Footer>
       <img src={alura} alt='Logo Alura' />
-      <p>Orgulhosamente criado durante a <a href='https://www.alura.com.br/' target='__blank'>Imersão React da Alura.</a></p>
+      <p>Orgulhosamente criado durante a <a href='https://www.alura.com.br/' target='__blank'>Imersão React da Alura</a>.</p>
     </Styled.Footer>
   )
 }
