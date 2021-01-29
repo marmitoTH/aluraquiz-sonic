@@ -7,13 +7,33 @@ interface QuizFormProps {
   description: string
   alternatives: string[]
   answer: number
+  onEvaluated(answer: boolean): void
 }
 
-const QuizForm: React.FC<QuizFormProps> = ({ question, description, alternatives, answer }) => {
+const QuizForm: React.FC<QuizFormProps> = ({
+  question,
+  description,
+  alternatives,
+  answer,
+  onEvaluated
+}) => {
   const [selected, setSelected] = useState<number>()
+  const [evaluated, setEvaluated] = useState(false)
 
-  const handleSelection = (choice: number) => {
-    setSelected(choice)
+  const evaluate = () => {
+    setEvaluated(true)
+    onEvaluated(answer === selected)
+  }
+
+  const getHighlightStatus = (index: number) => {
+    if (selected === index) {
+      if (evaluated)
+        return answer === index ? 'CORRECT' : 'WRONG'
+
+      return 'SELECTED'
+    }
+
+    return 'NONE'
   }
 
   return (
@@ -24,18 +44,25 @@ const QuizForm: React.FC<QuizFormProps> = ({ question, description, alternatives
         {alternatives.map((alternative, index) => (
           <Styled.Option
             key={index}
-            selected={index === selected}
+            highlight={getHighlightStatus(index)}
           >
             <input
               type='radio'
               name='choiceID'
-              onChange={() => handleSelection(index)}
+              disabled={evaluated}
+              onChange={() => setSelected(index)}
             />
             {alternative}
           </Styled.Option>
         ))}
       </Styled.Options>
-      <Button type='button'>CONFIRMAR</Button>
+      <Button
+        type='button'
+        disabled={evaluated}
+        onClick={evaluate}
+      >
+        CONFIRMAR
+      </Button>
     </form>
   )
 }
