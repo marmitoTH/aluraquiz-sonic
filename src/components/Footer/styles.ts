@@ -10,4 +10,13 @@ export const Footer = styled.footer`
   img {
     margin-right: 20px;
   }
+
+  a {
+    color: ${({ theme }) => theme.colors.contrastTextColor};
+    transition: 150ms;
+  }
+
+  a:hover {
+    opacity: .5;
+  }
 `
