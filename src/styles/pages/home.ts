@@ -5,7 +5,7 @@ export const Logo = styled.img`
 `
 
 export const Form = styled.form`
-  margin: 32px 0;
+  margin: 32px 0 16px 0;
 
   input {
     width: 100%;
