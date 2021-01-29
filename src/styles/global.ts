@@ -17,15 +17,6 @@ export default createGlobalStyle`
     background: ${({ theme }) => theme.colors.backgroundColor};
   }
 
-  a {
-    color: ${({ theme }) => theme.colors.contrastTextColor};
-    transition: 150ms;
-  }
-
-  a:hover {
-    opacity: .5;
-  }
-
   button {
     cursor: pointer;
   }
