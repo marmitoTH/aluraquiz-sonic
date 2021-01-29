@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import * as Styled from '../styles/pages/quiz'
 import * as Widget from '../components/Widget'
 import Header from '../components/Header'
@@ -6,8 +7,17 @@ import Background from '../components/Background'
 import QuizForm from '../components/QuizForm'
 import Footer from '../components/Footer'
 import GitHubCorner from '../components/GitHubCorner'
+import db from '../../db.json'
 
 const Quiz = () => {
+  const [questionID, setQuestionID] = useState(0)
+
+  const onAnswer = () => {
+    if (questionID < db.questions.length - 1) {
+      setQuestionID(questionID + 1)
+    }
+  }
+
   return (
     <>
       <Background />
@@ -16,21 +26,19 @@ const Quiz = () => {
         <Header />
         <Widget.default>
           <Widget.Header>
-            <strong>{`Pergunta ${'1'} de ${'10'}`}</strong>
+            <strong>{`Pergunta ${questionID + 1} de ${db.questions.length}`}</strong>
           </Widget.Header>
-          <Styled.Image src='https://img.utdstc.com/screen/13/sonic-the-hedgehog-1.png' alt='Imagem da questão' />
+          <Styled.Image
+            src={db.questions[questionID].image}
+            alt='Imagem da questão'
+          />
           <Widget.Content>
             <QuizForm
-              question='Em qual jogo Sonic fez sua primeira aparição?'
-              description='Vamos começar no nível fácil!'
-              alternatives={[
-                'Out Run',
-                'Sonic The Hedgehog (Genesis)',
-                'Sonic The Hedgehog (Master System)',
-                'Sega Forever Collection',
-                'Rad Mobile'
-              ]}
-              answer={3}
+              question={db.questions[questionID].title}
+              description={db.questions[questionID].description}
+              alternatives={db.questions[questionID].alternatives}
+              answer={parseInt(db.questions[questionID].answer)}
+              onEvaluated={onAnswer}
             />
           </Widget.Content>
         </Widget.default>
