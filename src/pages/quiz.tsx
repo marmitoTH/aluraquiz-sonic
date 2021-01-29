@@ -22,6 +22,7 @@ const Quiz = () => {
           <Widget.Content>
             <QuizForm
               question='Em qual jogo Sonic fez sua primeira aparição?'
+              description='Vamos começar no nível fácil!'
               alternatives={[
                 'Out Run',
                 'Sonic The Hedgehog (Genesis)',
