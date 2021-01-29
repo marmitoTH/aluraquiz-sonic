@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import * as Styled from '../styles/pages/home'
 import * as Widget from '../components/Widget'
 import Header from '../components/Header'
@@ -6,8 +7,23 @@ import Button from '../components/Button'
 import Footer from '../components/Footer'
 import GitHubCorner from '../components/GitHubCorner'
 import Background from '../components/Background'
+import { FormEvent, useContext, useState } from 'react'
+import { Context } from '../contexts/QuizContext'
 
 const Home = () => {
+  const router = useRouter()
+  const [name, setName] = useState('')
+  const { setUser } = useContext(Context)
+
+  const startGame = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
+    if (name.length > 0) {
+      setUser(name)
+      router.push('/quiz')
+    }
+  }
+
   return (
     <>
       <Background />
@@ -21,8 +37,11 @@ const Home = () => {
             </Widget.Header>
             <Widget.Content>
               <p>Teste os seus conhecimentos sobre o universo Sonic e compare seu resultado com os amigos!</p>
-              <Styled.Form>
-                <input placeholder='Diz aí seu nome pra jogar! :)' />
+              <Styled.Form onSubmit={startGame}>
+                <input
+                  placeholder='Diz aí seu nome pra jogar! :)'
+                  onChange={e => setName(e.target.value)}
+                />
                 <Button>JOGAR</Button>
               </Styled.Form>
             </Widget.Content>
