@@ -1,3 +1,4 @@
+import * as Styled from '../styles/pages/quiz'
 import * as Widget from '../components/Widget'
 import Header from '../components/Header'
 import Container from '../components/Container'
@@ -17,6 +18,7 @@ const Quiz = () => {
           <Widget.Header>
             <strong>{`Pergunta ${'1'} de ${'10'}`}</strong>
           </Widget.Header>
+          <Styled.Image src='https://img.utdstc.com/screen/13/sonic-the-hedgehog-1.png' alt='Imagem da questão' />
           <Widget.Content>
             <QuizForm
               question='Em qual jogo Sonic fez sua primeira aparição?'
