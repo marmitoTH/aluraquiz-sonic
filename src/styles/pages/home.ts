@@ -25,4 +25,5 @@ export const Form = styled.form`
 export const Title = styled.h1`
   font-size: 16px;
   line-height: 1.8;
+  margin-bottom: 8px;
 `
