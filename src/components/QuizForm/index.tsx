@@ -4,11 +4,12 @@ import * as Styled from './styles'
 
 interface QuizFormProps {
   question: string
+  description: string
   alternatives: string[]
   answer: number
 }
 
-const QuizForm: React.FC<QuizFormProps> = ({ question, alternatives, answer }) => {
+const QuizForm: React.FC<QuizFormProps> = ({ question, description, alternatives, answer }) => {
   const [selected, setSelected] = useState<number>()
 
   const handleSelection = (choice: number) => {
@@ -18,6 +19,7 @@ const QuizForm: React.FC<QuizFormProps> = ({ question, alternatives, answer }) =
   return (
     <form>
       <Styled.Title>{question}</Styled.Title>
+      <p>{description}</p>
       <Styled.Options>
         {alternatives.map((alternative, index) => (
           <Styled.Option
