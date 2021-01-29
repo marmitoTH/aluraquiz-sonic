@@ -1,18 +1,18 @@
 import * as Styled from '../styles/pages/home'
 import * as Widget from '../components/Widget'
+import Header from '../components/Header'
 import Container from '../components/Container'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 import Background from '../components/Background'
-import logo from '../assets/logo.svg'
 
 const Home = () => {
   return (
     <>
       <Background />
       <Container>
+        <Header />
         <main>
-          <Styled.Logo src={logo} alt='Logo AluraQuiz' />
           <Widget.default>
             <Widget.Header>
               <Styled.Title>Sonic The Hedgehog</Styled.Title>
