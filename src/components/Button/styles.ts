@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { shade } from 'polished'
 
 export const Button = styled.button`
   width: 100%;
@@ -8,4 +9,9 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.colors.contrastTextColor};
   font-size: 14px;
   font-weight: bold;
+  transition: 150ms;
+
+  &:hover {
+    background: ${({ theme }) => shade(.2, theme.colors.secondaryColor)};
+  }
 `
