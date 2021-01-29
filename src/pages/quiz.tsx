@@ -4,11 +4,13 @@ import Container from '../components/Container'
 import Background from '../components/Background'
 import QuizForm from '../components/QuizForm'
 import Footer from '../components/Footer'
+import GitHubCorner from '../components/GitHubCorner'
 
 const Quiz = () => {
   return (
     <>
       <Background />
+      <GitHubCorner projectUrl='https://github.com/marmitoTH/aluraquiz-sonic' />
       <Container>
         <Header />
         <Widget.default>

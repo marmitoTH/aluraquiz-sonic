@@ -4,12 +4,14 @@ import Header from '../components/Header'
 import Container from '../components/Container'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
+import GitHubCorner from '../components/GitHubCorner'
 import Background from '../components/Background'
 
 const Home = () => {
   return (
     <>
       <Background />
+      <GitHubCorner projectUrl='https://github.com/marmitoTH/aluraquiz-sonic' />
       <Container>
         <Header />
         <main>
