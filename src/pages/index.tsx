@@ -15,7 +15,7 @@ const Home = () => {
         <main>
           <Widget.default>
             <Widget.Header>
-              <Styled.Title>Sonic The Hedgehog</Styled.Title>
+              <strong>Sonic The Hedgehog</strong>
             </Widget.Header>
             <Widget.Content>
               <p>Teste os seus conhecimentos sobre o universo Sonic e compare seu resultado com os amigos!</p>

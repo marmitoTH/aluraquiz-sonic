@@ -13,7 +13,7 @@ const Quiz = () => {
         <Header />
         <Widget.default>
           <Widget.Header>
-            {`Pergunta ${'1'} de ${'10'}`}
+            <strong>{`Pergunta ${'1'} de ${'10'}`}</strong>
           </Widget.Header>
           <Widget.Content>
             <QuizForm
