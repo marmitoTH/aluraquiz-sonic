@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useRouter } from 'next/router'
+import { useContext, useState } from 'react'
 import * as Styled from '../styles/pages/quiz'
 import * as Widget from '../components/Widget'
 import Header from '../components/Header'
@@ -8,13 +9,22 @@ import QuizForm from '../components/QuizForm'
 import Footer from '../components/Footer'
 import GitHubCorner from '../components/GitHubCorner'
 import db from '../../db.json'
+import { Context } from '../contexts/QuizContext'
 
 const Quiz = () => {
+  const router = useRouter()
+  const { points, setPoints } = useContext(Context)
   const [questionID, setQuestionID] = useState(0)
 
-  const onAnswer = () => {
+  const onAnswer = (isCorrect: boolean) => {
+    if (isCorrect) {
+      setPoints(points + 1)
+    }
+
     if (questionID < db.questions.length - 1) {
       setQuestionID(questionID + 1)
+    } else {
+      router.push('result')
     }
   }
 
