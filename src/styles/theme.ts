@@ -1,15 +1,17 @@
+import db from '../../db.json'
+
 export default {
-  borderRadius: '4px',
+  borderRadius: db.theme.borderRadius,
   images: {
-    background: 'https://psxbrasil.com.br/wp-content/uploads/2020/10/SonicMania-1080-4.jpg'
+    background: db.bg
   },
   colors: {
-    primaryColor: '#2869f0',
-    secondaryColor: '#e63c2c',
-    backgroundColor: '#1c1814',
-    contrastTextColor: '#fff',
+    primaryColor: db.theme.colors.primary,
+    secondaryColor: db.theme.colors.secondary,
+    backgroundColor: db.theme.colors.mainBg,
+    contrastTextColor: db.theme.colors.contrastText,
     disabledButton: '#979797',
-    success: '#4caf50',
-    failed: '#f85622'
+    success: db.theme.colors.success,
+    failed: db.theme.colors.wrong
   }
 }
