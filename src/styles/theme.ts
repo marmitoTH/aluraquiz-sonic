@@ -8,6 +8,7 @@ export default {
     secondaryColor: '#e63c2c',
     backgroundColor: '#1c1814',
     contrastTextColor: '#fff',
+    disabledButton: '#979797',
     success: '#4caf50',
     failed: '#f85622'
   }
