@@ -1,4 +1,7 @@
 {
+  "bg": "https://psxbrasil.com.br/wp-content/uploads/2020/10/SonicMania-1080-4.jpg",
+  "title": "Sonic",
+  "description": "Teste seus conhecimentos sobre o universo Sonic The Hedgehog!!!",
   "questions": [
     {
       "image": "https://img.utdstc.com/screen/13/sonic-the-hedgehog-1.png",
@@ -130,5 +133,17 @@
         "Angel Island volta a flutuar"
       ]
     }
-  ]
+  ],
+  "external": [],
+  "theme": {
+    "colors": {
+      "primary": "#2869f0",
+      "secondary": "#e63c2c",
+      "mainBg": "#1c1814",
+      "contrastText": "#fff",
+      "wrong": "#f85622",
+      "success": "#4caf50"
+    },
+    "borderRadius": "4px"
+  }
 }
