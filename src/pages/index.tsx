@@ -42,7 +42,7 @@ const Home = () => {
                   placeholder='Diz aí seu nome pra jogar! :)'
                   onChange={e => setName(e.target.value)}
                 />
-                <Button>JOGAR</Button>
+                <Button disabled={!name}>JOGAR</Button>
               </Styled.Form>
             </Widget.Content>
           </Widget.default>
