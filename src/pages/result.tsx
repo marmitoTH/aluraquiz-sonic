@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Container from '../components/Container'
 import GitHubCorner from '../components/GitHubCorner'
 import * as Widget from '../components/Widget'
+import withUser from '../HOCs/withUser'
 
 const Result = () => {
   const { user, points } = useContext(Context)
@@ -31,4 +32,4 @@ const Result = () => {
   )
 }
 
-export default Result
+export default withUser(Result)

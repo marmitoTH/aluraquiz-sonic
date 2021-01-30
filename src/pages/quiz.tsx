@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 import GitHubCorner from '../components/GitHubCorner'
 import db from '../../db.json'
 import { Context } from '../contexts/QuizContext'
+import withUser from '../HOCs/withUser'
 
 const Quiz = () => {
   const router = useRouter()
@@ -58,4 +59,4 @@ const Quiz = () => {
   )
 }
 
-export default Quiz
+export default withUser(Quiz)
