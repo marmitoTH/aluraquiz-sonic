@@ -7,13 +7,13 @@ import Button from '../components/Button'
 import Footer from '../components/Footer'
 import GitHubCorner from '../components/GitHubCorner'
 import Background from '../components/Background'
-import { FormEvent, useContext, useState } from 'react'
+import { FormEvent, useContext, useEffect, useState } from 'react'
 import { Context } from '../contexts/QuizContext'
 
 const Home = () => {
   const router = useRouter()
   const [name, setName] = useState('')
-  const { setUser } = useContext(Context)
+  const { setUser, setPoints } = useContext(Context)
 
   const startGame = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -23,6 +23,11 @@ const Home = () => {
       router.push('/quiz')
     }
   }
+
+  useEffect(() => {
+    setUser('')
+    setPoints(0)
+  }, [])
 
   return (
     <>
