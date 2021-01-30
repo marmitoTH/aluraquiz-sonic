@@ -64,7 +64,7 @@ const QuizForm: React.FC<QuizFormProps> = ({
       </Styled.Options>
       <Button
         type='button'
-        disabled={evaluated}
+        disabled={evaluated || typeof (selected) === 'undefined'}
         onClick={evaluate}
       >
         CONFIRMAR
