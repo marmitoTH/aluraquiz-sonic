@@ -56,7 +56,7 @@ const Home = () => {
           <Widget.default>
             <Widget.Content>
               <Styled.Title>Quizes da galera</Styled.Title>
-              <Styled.Description>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Alguma coisa fez:</Styled.Description>
+              <Styled.Description>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão React fez:</Styled.Description>
               {db.external.map((url, index) => (
                 <Styled.ExternalLink
                   key={index}
