@@ -8,7 +8,7 @@
   <img src='https://user-images.githubusercontent.com/25598040/106502779-90664380-64a3-11eb-922a-2841881e61aa.png'/>
 </p>
 
-AluraQuiz Sonic is an application built with Next.js and writed in TypeScript to practice server side rendering features with React. The app has been developed in one week during the Imersão React promoted by Alura. In the game the user can answer various questions about the Sonic universe and from various different Sonic games. I've made some improvement from the original project, like implementing a game context system to control players pontuation and route access. The application is very modular, one can easily modify the db.json file to change quiz data, page styling and images.
+AluraQuiz Sonic is an application built with Next.js and writed in TypeScript to practice server side rendering features with React. The app has been developed in one week during the Imersão React promoted by Alura. In the game the user can answer various questions about the Sonic universe and from various different Sonic games. I've made some improvement from the original project, like implementing a game context system to control players punctuation and route access. The application is very modular, one can easily modify the db.json file to change quiz data, page styling and images.
 
 ## 🔧 Made With
 
