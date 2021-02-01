@@ -9,6 +9,8 @@ import GitHubCorner from '../components/GitHubCorner'
 import Background from '../components/Background'
 import { FormEvent, useContext, useEffect, useState } from 'react'
 import { Context } from '../contexts/QuizContext'
+import getQuizTitle from '../utils/getQuizTitle'
+import db from '../../db.json'
 
 const Home = () => {
   const router = useRouter()
@@ -54,7 +56,12 @@ const Home = () => {
           <Widget.default>
             <Widget.Content>
               <Styled.Title>Quizes da galera</Styled.Title>
-              <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Alguma coisa fez:</p>
+              <Styled.Description>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Alguma coisa fez:</Styled.Description>
+              {db.external.map((url, index) => (
+                <Styled.ExternalLink key={index} href={url}>
+                  {getQuizTitle(url)}
+                </Styled.ExternalLink>
+              ))}
             </Widget.Content>
           </Widget.default>
         </main>
