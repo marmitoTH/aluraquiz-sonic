@@ -36,6 +36,7 @@ export const Description = styled.p`
 export const ExternalLink = styled.a`
   display: block;
   padding: 9px 15px;
+  font-size: 14px;
   color: ${({ theme }) => theme.colors.contrastTextColor};
   background: ${({ theme }) => shade(.5, theme.colors.primaryColor)};
   border-radius: ${({ theme }) => theme.borderRadius};
