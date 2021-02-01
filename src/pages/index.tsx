@@ -58,7 +58,11 @@ const Home = () => {
               <Styled.Title>Quizes da galera</Styled.Title>
               <Styled.Description>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão Alguma coisa fez:</Styled.Description>
               {db.external.map((url, index) => (
-                <Styled.ExternalLink key={index} href={url}>
+                <Styled.ExternalLink
+                  key={index}
+                  href={url}
+                  target='__blank'
+                >
                   {getQuizTitle(url)}
                 </Styled.ExternalLink>
               ))}
