@@ -9,6 +9,9 @@ const Head = () => {
       <meta property='og:title' content={`AluraQuiz ${db.title}`} />
       <meta property='og:description' content={db.description} />
       <meta property='og:image' content={db.bg} />
+      <meta property='twitter:title' content={`AluraQuiz ${db.title}`} />
+      <meta property='twitter:description' content={db.description} />
+      <meta property='twitter:image' content={db.bg} />
       <link rel='preconnect' href='https://fonts.gstatic.com' />
       <link href='https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap' rel='stylesheet' />
     </NextHead>
